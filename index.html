@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador HAL Trauma - Columbus Hospital Simulation Center</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #000ba4;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .main-title {
+            font-family: 'Times', 'Times New Roman', serif;
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        .simulator-name {
+            font-family: 'Times', 'Times New Roman', serif;
+            font-size: 2rem;
+            margin: 1rem 0 0 0;
+            font-weight: 500;
+            color: white; /* Color amarillo para resaltar */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 40%; /* Reducimos el tamaño del video */
+            height: 0;
+            overflow: hidden;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 800px; /* Limitamos el ancho máximo del video */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .video-container iframe, .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .info-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .info-box {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f7f9fc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #0055a4;
+            margin-top: 0;
+            font-family: 'Times', 'Times New Roman', serif;
+        }
+        footer {
+            background-color: #0055a4;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Columbus Hospital Simulation Center</h1>
+        <h2 class="simulator-name">Simulador HAL Trauma</h2> <!-- Nuevo título -->
+    </header>
+
+    <div class="container">
+        <!-- Video del simulador (con autoplay) -->
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="saveinstacc-720p-mannequin-de-simulation-medicale-trauma-hal-s3040-100-1_urBFZwJ5.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <div class="info-section">
+            <div class="info-box">
+                <h2>Descripción del Simulador</h2>
+                <p>HAL Trauma es un simulador especializado en la atención de pacientes con traumatismos severos. Está diseñado para recrear lesiones traumáticas complejas y sus manifestaciones fisiológicas correspondientes. El simulador cuenta con características como sangrado controlable, neumotórax simulado, estado de shock hemorrágico, fracturas simuladas, y respuestas fisiológicas programables a intervenciones. Permite la práctica de procedimientos críticos como control de hemorragias, intubación en trauma, descompresión torácica, accesos vasculares de emergencia y estabilización de fracturas.</p>
+            </div>
+            
+            <div class="info-box">
+                <h2>Beneficios para el Estudiante</h2>
+                <ul>
+                    <li>Exposición a situaciones de trauma severo en un entorno educativo controlado</li>
+                    <li>Práctica de protocolos ATLS (Advanced Trauma Life Support) sin riesgo para pacientes</li>
+                    <li>Desarrollo de habilidades técnicas en procedimientos de emergencia traumatológica</li>
+                    <li>Entrenamiento en evaluación rápida y sistemática del paciente traumatizado</li>
+                    <li>Mejora de la capacidad de priorización en situaciones con múltiples lesiones</li>
+                    <li>Perfeccionamiento del trabajo en equipo durante la atención de emergencias traumáticas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Columbus Hospital Simulation Center | Contacto: Hospital.simulation@columbus.edu</p>
+    </footer>
+</body>
+</html>
